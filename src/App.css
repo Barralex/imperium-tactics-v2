@@ -17,8 +17,9 @@ body, html {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 h1 {
@@ -27,18 +28,23 @@ h1 {
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
-.board-container {
+.button-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 20px;
 }
 
-/* Asegurar responsividad en pantallas pequeñas */
+/* Responsive styling */
 @media (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
     margin-bottom: 15px;
+  }
+  
+  .app-container {
+    padding: 10px;
   }
 }
